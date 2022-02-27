@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Динамическая модель компетенций</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="left-menu">	
+		<ul>
+			<li><a href="./index.html">Главная</a></li>
+			<li><a href="./analytics.html">Общая аналитика</a></li>
+			<li><a href="./graph.html" class="active">Графики</a></li>
+			<li><a href="./dynamics.html">Динамика</a></li>
+			<li><a href="./method.html">Методика отбора</a></li>
+		</ul>
+	</div>
+	<div class="right-content">
+		<h1>Графики</h1>
+		<div class="">
+			<div class="select_item">
+			    <label ><strong>Выберите год:</strong></label>
+			    <select id="select">
+			        <option value="2021" selected>2021</option>
+			        <option value="2020">2020</option>
+			        <option value="2019">2019</option>
+			        <option value="2018">2018</option>
+			        <option value="2017">2017</option>
+			        <option value="20172021">2017-2021</option>
+			        <!-- <option value="1" selected>Общий</option> -->
+			        
+			    </select>
+			</div>
+
+			<div class="grid_container1">
+			    <!-- <canvas class="d" id="oilChart" width="300" height="100"  style="display:block"></canvas> -->
+			    <canvas class="d" id="myChart00" width="900" height="800" style="display:block"></canvas>
+			    <canvas class="d" id="gr2020" width="900" height="800" style="display:none"></canvas>
+			    <canvas class="d" id="gr2019" width="900" height="800" style="display:none"></canvas>
+			    <canvas class="d" id="gr2018" width="900" height="800" style="display:none"></canvas>
+			    <canvas class="d" id="gr2017" width="900" height="800" style="display:none"></canvas>
+			    <canvas class="d" id="gr20172021" width="900" height="800" style="display:none"></canvas></div>
+
+			<div class="select_item" style="display: none;">
+			    <label><strong>Выберите год:</strong></label>
+			    <select id="select1">
+			        <option value="1" selected>Динамика</option>
+			        <option value="2017">2017</option>
+			        <option value="2018">2018</option>
+			        <option value="2019">2019</option>
+			        <option value="2020">2020</option>
+			        <option value="2021">2021</option>
+			    </select>
+			</div>
+
+
+			<div class="grid_container" style="display: none;">
+			    <canvas class="k" id="speedChart" width="400" height="200" style="display:block"></canvas>
+			    <canvas class="k" id="Chart2017" width="300" height="100"  style="display:none"></canvas>
+			    <canvas class="k" id="Chart2018" width="300" height="100"  style="display:none"></canvas>
+			    <canvas class="k" id="Chart2019" width="300" height="100" style="display:none"></canvas>
+			    <canvas class="k" id="Chart2020" width="300" height="100" style="display:none"></canvas>
+			    <canvas class="k" id="Chart2021" width="300" height="100"  style="display:none"></canvas>
+			</div>
+		</div>
+		<div>
+			<a href="./dynamics.html" class="btn_next">Посмотреть динамику</a>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script src="script/graph.js"></script>
+</body>
+</html>
